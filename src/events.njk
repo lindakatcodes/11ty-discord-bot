@@ -1,4 +1,5 @@
 ---
+layout: layouts/base.njk
 permalink: 
 	events: /events/
 ---
@@ -13,5 +14,5 @@ permalink:
 </div>
 
 {% for event in events %}
-{{ eventCard.card(event) }}
+  {{ eventCard.card(event) }}
 {% endfor %}
