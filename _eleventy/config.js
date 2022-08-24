@@ -1,3 +1,5 @@
+const { EleventyServerlessBundlerPlugin } = require("@11ty/eleventy");
+
 module.exports = function (eleventyConfig) {
 	return {
 		templateFormats: ['njk'],

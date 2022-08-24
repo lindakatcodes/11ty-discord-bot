@@ -1,0 +1,12 @@
+{% import "components/event-card.njk" as eventCard %}
+
+<div class="flex flex-col items-center justify-center mt-10">
+  <div class="flex flex-col">
+    <h1>Discord Community Events</h1>
+    <p class="animate-pulse">Served via On Demand Builders</p>
+  </div>
+</div>
+
+{% for event in events %}
+{{ eventCard.card(event) }}
+{% endfor %}
