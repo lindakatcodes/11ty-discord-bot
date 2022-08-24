@@ -13,8 +13,7 @@ permalink: /events/
 </div>
 
 {% for event in events %}
-<p class="p-3">
-{{ event }}
-</p>
+<div class="flex justify-center">
   {{ eventCard.card(event) }}
+</div>
 {% endfor %}
